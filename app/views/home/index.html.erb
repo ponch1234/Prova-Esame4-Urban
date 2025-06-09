@@ -24,25 +24,65 @@
 
 <%= render partial: 'components/card' ,locals:{
  titolo:'La nostra sede principale',
- 
  cardona: [
-  
    { img:'  /img/studio.jpg ',  testo:'La sede principale di Punto Zero rappresenta il cuore pulsante dello studio, un ambiente progettato per riflettere i valori di innovazione, creatività e sostenibilità che contraddistinguono l’azienda. Situata in una location strategica, la struttura unisce spazi funzionali e aree di lavoro accoglienti, pensate per favorire la collaborazione tra architetti, designer e clienti. L’interior design della sede sposa uno stile moderno ed elegante, con materiali eco-friendly e soluzioni architettoniche all’avanguardia che testimoniano l’impegno dello studio verso l’ambiente. Qui nascono e prendono forma i progetti di architettura e ristrutturazione, attraverso un processo che unisce professionalità tecnica e visione creativa, al servizio di clienti privati e aziende in cerca di soluzioni su misura, innovative e sostenibili.'},
-  
-
 ],
-
 }%>  
 
 
 <p></p>
- 
-
-
- <%= render partial: 'components/cardina', locals:{
+  <%= render partial: 'components/cardina', locals:{
   bottone: [
-    { fotoristo: '/glovo/rider.png ', risto: 'Diventa un rider ' ,testo: ' Goditi flessibilità, libertà e guadagni competitivi effetuando consegne tramite Glovo.', testogiallo: 'Registrati qui '},
-    { fotoristo: '   /glovo/kebababdulai.jpg', risto: 'Diventa un Partner  ', testo: 'Cresci con Glovo! La nostra tecnologia e la nostra base di utenti possono aiutarti a incrementare le vendite e cogliere nuove opportunità!', testogiallo: 'Registrati qui'},
+    { fotoristo: ' /img/ufficio.jpg', risto: 'Diventa un architetto ' ,testo: ' Hai passione per l’architettura, il design e la trasformazione degli spazi?
+        Punto Zero è alla ricerca di giovani talenti motivati, curiosi e pronti a crescere in un ambiente dinamico e innovativo.', testogiallo: 'Manda cv'},
+    { fotoristo: ' /img/segre.jpg', risto: 'Diventa una segretaria  ', testo: ' Punto Zero, studio di architettura specializzato in progettazione, interior design e ristrutturazioni, è alla ricerca di una figura organizzata, affidabile e con ottime capacità relazionali per il ruolo di segretaria.', testogiallo: 'Manda cv'},
   ]
 
+} %>
+
+<p></p>
+<%= render partial: 'components/poster', locals: {
+  primotesto1: " Qualità e Innovazione",
+ 
+  immagineback1: ' /img/segre.jpg',
+ 
+  primotesto2: "Sostenibilità Ambientale",
+   immagineback2: ' /img/albero.jpg',
+ 
+  primotesto3: " Professionalità del Team",
+   immagineback3: ' /img/team.jpg',
+ } %>
+
+ <p>   </p>
+
+
+
+
+
+<%= render partial: 'components/footer', locals: {
+  uniamo: [
+    "Lavora con noi", 
+    "I nostri servizi", 
+    "Progetti realizzati", 
+    "Interior Design", 
+    "Ristrutturazioni"
+  ],
+  link: [
+    "Chi siamo", 
+    "FAQ", 
+    "Contattaci", 
+    "Sostenibilità", 
+    "Team"
+  ],
+  seguici: [
+    "Instagram", 
+    "TikTok"
+  ],
+  altro: [
+    "Configura i cookie", 
+    "Termini e condizioni", 
+    "Politica sulla privacy", 
+    "Conformità"
+  ],
+ 
 } %>
