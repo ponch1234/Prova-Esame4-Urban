@@ -1,29 +1,33 @@
 <hr class="w-96 h-1 mx-auto my-4 bg-gray-100 border-0 rounded-sm md:my-10 dark:bg-gray-700">
 
-<div class="flex justify-center px-4">
-  <div class="w-full max-w-4xl flex flex-col">
+  <div class='flex  justify-center'>
+  <div class='w-full max-w-4xl flex flex-col'>
+ 
+ 
+         <h1 class='text-xl  text-gray-600 text-center mb-4 font-serif'><%= titolo %></h1>
 
-    <h1 class="text-xl text-gray-600 text-center mb-4 font-serif"><%= titolo %></h1>
-
+  
+ 
     <% cardona.each_with_index do |items, index| %>
-      <div class="w-full border-3 border-gray-100 p-5 mb-6 rounded-lg">
+        <p></p>
+      <div class='w-full h-auto border-3 border-gray-100 p-5 mb-6 rounded-lg'>
 
-        <div class="flex flex-col md:flex-row md:items-start">
-          <img 
-            class="w-full md:w-72 h-auto md:h-60 object-cover border-2 border-gray-100 rounded-lg mb-4 md:mb-0 md:mr-6" 
-            src="<%= items[:img] %>" 
-            alt="Immagine progetto"
-          />
+ 
+        <div class='flex'>
+          <img class='w-70 h-60 object-cover border-2 border-gray-100 rounded-lg' src="<%= items[:img] %>" />
 
-          <div class="flex flex-col items-start">
-            <h1 class="text-start font-serif text-sm font-light text-gray-500"><%= items[:testo] %></h1>
+          <div class='flex flex-col items-start p-4'>
+             <h1 class='text-start  font-serif text-sm font-light text-gray-500'><%= items[:testo] %></h1>
           </div>
         </div>
+ 
+       
 
       </div>
     <% end %>
 
   </div>
 </div>
-
+  
 <hr class="w-96 h-1 mx-auto my-4 bg-gray-100 border-0 rounded-sm md:my-10 dark:bg-gray-700">
+
