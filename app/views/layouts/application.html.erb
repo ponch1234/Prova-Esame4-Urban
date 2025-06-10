@@ -23,8 +23,47 @@
   </head>
 
   <body>
+   <%= render partial: 'components/navbar', locals:{
+    sconto:"Punto zero archittetura dal 1974",
+    logo:' /img/nuovo.png',
+    voci:  [
+      {  testo: 'Home', link:'http://127.0.0.1:3000/home',},
+      {  testo: 'Chi siamo',link:'http://127.0.0.1:3000/home'},
+      {  testo: 'Servizi'},
+      {  testo: 'Contatti'}
+    ]
+} %>
+
+
     <main class=" ">
       <%= yield %>
     </main>
+    <%= render partial: 'components/footer', locals: {
+  uniamo: [
+    "Lavora con noi", 
+    "I nostri servizi", 
+    "Progetti realizzati", 
+    "Interior Design", 
+    "Ristrutturazioni"
+  ],
+  link: [
+    "Chi siamo", 
+    "FAQ", 
+    "Contattaci", 
+    "Sostenibilità", 
+    "Team"
+  ],
+  seguici: [
+    "Instagram", 
+    "TikTok"
+  ],
+  altro: [
+    "Configura i cookie", 
+    "Termini e condizioni", 
+    "Politica sulla privacy", 
+    "Conformità"
+  ],
+ 
+} %>
   </body>
 </html>
