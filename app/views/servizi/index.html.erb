@@ -1,0 +1,47 @@
+<%= render partial: 'components/servizi', locals: {
+  img: ' /img/servizi2.jpg',
+  testopiccolo: 'Servizi',
+  primariga: 'Guarda tutti ',
+  secondariga: 'i nostri servizi',
+ } %>
+<P></p>
+ <%= render partial: 'components/puntini',locals:{
+  bottone: [
+    { foto: ' /img/serv.jpg  ', testo: 'Progettazione preliminare' },
+    { foto: ' /img/servizi2.jpg  ', testo: 'Progettazione definitiva' },
+    { foto: '  /img/pro.jpg', testo: 'Direzione dei lavori ' },
+    { foto: '  /img/pro3.jpg', testo: 'Relazioni tecniche e perizie' },
+    { foto: ' /img/Progettazione su misura di arredi e mobili.jpg ', testo: 'Progettazione su misura di arredi e mobili' },
+    { foto: ' /img/prog.jpg ', testo: ' Progettazione paesaggistica' },
+    { foto: '  /img/ambiente.jpg   ', testo: 'Analisi energetiche e ambientali ' },
+    { foto: ' /img/servizi2.jpg  ', testo: 'Rendering e visualizzazioni 3D ' },
+   ]
+} %>
+<p></p>
+<%= render partial: 'components/card' ,locals:{
+ titolo:'I nostri servizi',
+ cardona: [
+   { img:'   /img/foto.jpg ',  testo:'Punto Zero è uno studio di architettura specializzato nella progettazione di spazi innovativi, funzionali e sostenibili. Offriamo un’ampia gamma di servizi dedicati a privati e aziende, seguendo ogni progetto con cura, creatività e precisione tecnica. Dalla concezione iniziale alla realizzazione finale, sviluppiamo progetti residenziali, commerciali e direzionali su misura. Ogni spazio è studiato per rispondere alle esigenze del cliente, con un occhio attento all’estetica contemporanea e all’efficienza funzionale. La responsabilità ambientale è parte integrante della nostra filosofia progettuale. Applichiamo soluzioni a basso impatto, valutiamo l’efficienza energetica e utilizziamo materiali ecocompatibili per contribuire a un’architettura più consapevole'},
+],
+}%>  
+<p></p>
+ <%= render partial: 'components/recensioni' ,locals:{
+ 
+titolo: "Recensioni",
+  cardona: [
+    {
+      Nome: 'Laura B.',
+      rispo: 'Punto Zero ha saputo interpretare perfettamente le nostre esigenze. Il risultato è una casa moderna, luminosa e funzionale. Consigliatissimi!',
+    },
+    {
+      Nome: 'Davide M.',
+      rispo: 'Team competente e professionale. Hanno seguito ogni fase della ristrutturazione con attenzione e puntualità. Un’esperienza davvero positiva.',
+    },
+    {
+      Nome: 'Chiara G.',
+      rispo: 'Interior design impeccabile! Gli ambienti sono eleganti e curati nei minimi dettagli. Puntano molto anche sulla sostenibilità, e si vede.',
+    },
+  ],
+ 
+}%> 
+

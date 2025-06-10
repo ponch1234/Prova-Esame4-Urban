@@ -1,0 +1,33 @@
+   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 150"  >
+      <path fill="#f3f4f5"   fill-opacity="1"
+        d="M0,40L80,35C160,30,320,15,480,30C640,45,800,90,960,90C1120,90,1280,45,1360,22.5L1440,0L1440,150L1360,150C1280,150,1120,150,960,150C800,150,640,150,480,150C320,150,160,150,80,150L0,150Z" />
+    </svg>
+
+
+<div class='flex  justify-center bg-[#f3f4f5]'>
+
+  <div class='w-full max-w-4xl flex flex-col'>
+    <div class='flex'>
+       
+
+    <h1 class='text-xl font-bold text-start mt-1'><%= titolo %></h1>
+          
+      </div>
+    <div class="flex flex-wrap justify-center max-w-[800px] gap-2">
+
+        <% cardona.each_with_index do |items, index| %>
+            <p></p>
+        <div class=' w-80 bg-white  rounded-lg h-auto border border-gray-100'>
+       <div class='p-5 '>
+        <h1 class='font-bold text-start  '> <%=items[:Nome]%></h1>
+                <h1 class='font-light text-s  text-start  '> <%=items[:rispo]%></h1>
+      </div>
+        </div>
+            
+        <% end %>
+
+    </div>
+    
+  </div>
+</div>
+ 

@@ -1,0 +1,14 @@
+ 
+<div class='flex items-center justify-center mt-10 '>
+<div class="flex flex-wrap justify-center items-center gap-5">
+  <% bottone.each_with_index do |item, index| %>
+    <div class="flex flex-col items-center justify-center w-1/4 sm:w-1/5  "> <!-- p-1 per spaziature minime -->
+      <div class="relative w-20 h-20 sm:w-24 sm:h-24 mb-1"> <!-- Immagine più compatta -->
+        <img class="h-full w-full object-cover rounded-full" src="<%= item[:foto ] %>" alt="Immagine">
+      </div>
+      
+      <p class="text-white rounded font-serif bg-[#778da9] p-2 text-center text-sm"><%= item[:testo] %></p> <!-- p-2 e text-sm -->
+    </div>
+  <% end %>
+</div>
+</div>
